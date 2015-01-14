@@ -1,1 +1,171 @@
-/* -------BASIC ELEMENTS------- */
+body {
+	margin:0;
+	padding:0;
+	font-family: Open Sans, sans-serif;
+	background-color: #fafafa;
+}
+h1, h2, h3 {
+	color: #151b69;
+}
+a {
+	color: #151b69;
+	text-decoration:none;
+}
+p {
+	font-size: .75em;
+}
+
+
+/* -------REUSABLE CLASSES------- */
+
+
+
+}
+.pageWrapper {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+@import url(<link href='http://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans:400italic,400|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>);
+
+.clearfix { 
+	zoom: 1; 
+}
+.clearfix:before, .clearfix:after { 
+	content: ""; display: table; 
+}
+.clearfix:after { 
+	clear: both; 
+}
+
+.visuallyhidden {
+	position:absolute;
+	left:-9999px;
+}
+
+
+
+/* ----------HEADER---------- */
+
+
+
+
+.logo {
+	margin:0 auto;
+	float: left;
+}
+.logo a {
+	display:block;
+	width:224px;
+	height:76px;
+	background:url(../images/conceptlogo.png) no-repeat 0 0;
+	background-image: linear-gradient(transparent,transparent), url(../images/conceptlogo.svg);
+	text-indent: -9999px;
+}
+.siteHeader {
+	height: 110px;
+	background-color: #fdfdfd;
+	padding: 15px;
+	-webkit-box-shadow: 0 5px 0px 0 #d1d1d1;
+	   -moz-box-shadow: 0 5px 0px 0 #d1d1d1;
+	box-shadow: 0 5px 5px 0 #d1d1d1;
+	background: -moz-linear-gradient(top,  rgba(186,186,186,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(186,186,186,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(186,186,186,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(186,186,186,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(186,186,186,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(186,186,186,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6bababa', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+}
+.siteHeader ul {
+	display: inline;
+	text-decoration: none;
+}
+
+
+/* -- Contact Navigation-- */
+
+.contactNav {
+	margin:0;
+	padding:0;
+	width: 1080px;
+	list-style: none;
+}
+.contactNav li {
+	display:block;
+	padding-right: 15px;
+	font-size: .87em;
+	float:left;
+}
+.contactNav a {
+	display:block;
+}
+
+/* -- Main Navigation -- */
+
+.mainNav {
+	margin:0;
+	padding:0;
+	width: 1080px;
+	list-style: none;
+}
+.mainNav li {
+	display:block;
+	font-weight: bold;
+	padding-right: 15px;
+	font-size: 1em;
+	float:left;
+}
+.mainNav a {
+	display:block;
+}
+
+
+
+
+/* ----------MAIN TAG CONTENT---------- */
+
+
+
+
+.mainContent {
+	width: 1080px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+/* --Left Column SECTION-- */
+
+}
+.leftColumn {
+	float: left;
+	margin-left: 20px;
+}
+.leftTop {
+	width: 499px;
+	height: 389px;
+	background: url(../images/splashtop-aqua.png) center no-repeat, url(../images/productbg.png) no-repeat;
+	float: left;
+}
+.leftBottom {
+	float: left;
+	width:570px;
+	height: 270px;
+	clear:left;
+}
+
+/* --Right Column SECTION-- */
+
+.rightColumn {
+}
+.rightTop {
+}
+.rightBottom {
+}
+
+
+/* ----------FOOTER---------- */
+.footer {
+	background-color: #1e2039;
+	height: 220px;
+}

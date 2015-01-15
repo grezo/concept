@@ -1,11 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans:400italic,400,700,800,600);
+
+
 body {
 	margin:0;
 	padding:0;
-	font-family: Open Sans, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	background-color: #fafafa;
 }
 h1, h2, h3 {
 	color: #151b69;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 2em;
 }
 a {
 	color: #151b69;
@@ -13,20 +21,27 @@ a {
 }
 p {
 	font-size: .75em;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.8;
 }
 
 
-/* -------REUSABLE CLASSES------- */
+/* =============================================================== REUSABLE CLASSES ======= */
 
 
 
+div .pageWrapper {
+	width: 960px;
+	margin: 0 auto;
+	clear: left;
 }
 .pageWrapper {
-	width: 1080px;
+	width: 960px;
 	margin: 0 auto;
+	position: relative;
 }
 
-@import url(<link href='http://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans:400italic,400|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>);
+
 
 .clearfix { 
 	zoom: 1; 
@@ -45,7 +60,7 @@ p {
 
 
 
-/* ----------HEADER---------- */
+/* ====================================================================== HEADER ===========*/
 
 
 
@@ -76,30 +91,48 @@ background: -o-linear-gradient(top,  rgba(186,186,186,0.65) 0%,rgba(0,0,0,0) 100
 background: -ms-linear-gradient(top,  rgba(186,186,186,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
 background: linear-gradient(to bottom,  rgba(186,186,186,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6bababa', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-
+	padding-bottom: 0;
 }
 .siteHeader ul {
 	display: inline;
 	text-decoration: none;
 }
 
+/* ==================================================================== NAV BAR ============ */
+
+
+
+
+.navbar {
+float: right;
+}
 
 /* -- Contact Navigation-- */
 
 .contactNav {
 	margin:0;
 	padding:0;
+	font-family: 'Open Sans', sans-serif;
 	width: 1080px;
 	list-style: none;
 }
+.contactNav ul {
+	position: absolute; top: 5px; right: 0px;
+	margin: 0;
+}
 .contactNav li {
 	display:block;
-	padding-right: 15px;
-	font-size: .87em;
+	padding-left: 20px;
 	float:left;
+	font-size: .68em;
+	font-weight: bold;
+	
 }
 .contactNav a {
-	display:block;
+	display: block;
+	color: #0c6ecf;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
 }
 
 /* -- Main Navigation -- */
@@ -110,36 +143,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6bababa', e
 	width: 1080px;
 	list-style: none;
 }
+.mainNav ul {
+	position: absolute; top: 50px; right: 0px;
+	margin: 0;
+}
 .mainNav li {
 	display:block;
 	font-weight: bold;
-	padding-right: 15px;
+	padding-left: 50px;
 	font-size: 1em;
 	float:left;
+	letter-spacing: 2px;
 }
 .mainNav a {
 	display:block;
+	font-family: 'Oswald',sans-serif;
 }
 
 
 
 
-/* ----------MAIN TAG CONTENT---------- */
+/* ================================================================== MAIN TAG CONTENT ==== */
 
 
 
 
 .mainContent {
-	width: 1080px;
+	width: 960px;
 	margin: 0 auto;
-	margin-top: 20px;
+	margin-top: 47px;
 }
 /* --Left Column SECTION-- */
 
-}
 .leftColumn {
 	float: left;
-	margin-left: 20px;
+	width: 45%;
+	margin-right: 20px;
 }
 .leftTop {
 	width: 499px;
@@ -149,7 +188,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6bababa', e
 }
 .leftBottom {
 	float: left;
-	width:570px;
+	width:400px;
 	height: 270px;
 	clear:left;
 }
@@ -157,15 +196,68 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6bababa', e
 /* --Right Column SECTION-- */
 
 .rightColumn {
+	float: left;
+	width: 45%;
 }
 .rightTop {
+	height: 200px;
 }
 .rightBottom {
+	clear: left;
 }
 
+/* -------------------------------FORM-- */
+.price_div {
+	width: 110px;
+	height: 200px;
+	float: left;
+}
+.msrp {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.12em;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	line-height: 1.5;
+}
+.oldPrice {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.12em;
+	font-weight: bold;
+	color: #a3a3a3;
+	text-decoration: line-through;
+	padding: 0;
+	margin: 0;
+	line-height: 1.5;
+}
+.newPrice {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.12em;
+	font-weight: bold;
+	color: #af0508;
+	text-decoration: line-through;
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px #646464 solid;
+	line-height: 1.5;
+}
+.form_div {
+	float: left;
+	width: 295px;
+	height: 200px;
+	padding-left: 20px;
+	clear: right;
+}
+/* ======================================================================= FOOTER ========= */
 
-/* ----------FOOTER---------- */
+
+
+
 .footer {
 	background-color: #1e2039;
 	height: 220px;
+	clear: both;
 }
+
+
+
